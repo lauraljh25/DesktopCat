@@ -1,0 +1,28 @@
+﻿<Window x:Name="window" x:Class="DesktopCat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopCat"
+        mc:Ignorable="d"
+        Title="" Height="241" Width="335" 
+        Topmost="True" ResizeMode="NoResize" 
+        ShowInTaskbar="False" BorderBrush="Transparent" 
+        WindowStyle="None" Background="Transparent"
+        AllowsTransparency="True" WindowState="Maximized">
+
+    <Canvas x:Name="CatArea" Margin="0,0,0,0" Background="Transparent" MouseMove="CatArea_MouseMove">
+        <Rectangle x:Name="PlaceHolderCat" Width="109" Height="85" Canvas.Left="0" Canvas.Top="0">
+            <Rectangle.Fill>
+                <ImageBrush x:Name="SpriteSheetImageBrush" ImageSource="/catSprites.png" 
+                    Stretch="None"
+                    AlignmentX="Left" 
+                    AlignmentY="Top"
+                    ViewboxUnits="Absolute" Viewbox="611, 455, 0, 0">
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Canvas>
+
+
+</Window>
