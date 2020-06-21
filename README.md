@@ -1,2 +1,2 @@
 # DesktopCat
-Little cat that follows the mouse
+Small cat sprite made using WPF that will chase the mouse.
